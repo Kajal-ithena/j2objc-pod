@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name             = 'j2objc-pod'
-    s.version          = '2.6'
+    s.version          = '2.7'
     s.summary          = 'Integrates the pre-built J2ObjC frameworks into your project.'
     s.description      = <<-DESC
     Downloads the j2objc release and integrates the frameworks into your project.
