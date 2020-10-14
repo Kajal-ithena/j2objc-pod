@@ -26,8 +26,10 @@ Pod::Spec.new do |s|
     s.libraries = 'jre_emul', 'icucore', 'z', 'iconv'
     s.vendored_libraries = 'j2objc_lib/lib/libjre_emul.a', 'j2objc_lib/lib/libjavax_inject.a'
   
-    s.xcconfig = { 
+    s.xcconfig = {
         'HEADER_SEARCH_PATHS' => '"${PODS_ROOT}/j2objc_lib/include"'
-     }
+    }
+    s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+    s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   
   end
